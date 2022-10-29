@@ -601,16 +601,7 @@ label {
 .add-sales-area .blog-card {
   border-radius: 15px;
 }
-.add-sales-area .add-sales-blog-card-row .col-lg-4:nth-child(1) .blog-card {
-  filter: drop-shadow(8px 0px 10px #292421);
-}
-.add-sales-area .add-sales-blog-card-row .col-lg-4:nth-child(2) .blog-card {
-  filter: drop-shadow(8px 0px 10px #222721) opacity(0.95);
-}
-.add-sales-area .add-sales-blog-card-row .col-lg-4:nth-child(3) .blog-card {
-  filter: drop-shadow(8px 0px 10px hsla(108deg, 100%, 50%, 0.144));
-}
-.add-sales-area .add-sales-blog-card-row .add-sales-img-wrapper {
+.add-sales-area .add-sales-img-wrapper {
   border-radius: 15px;
 }
 
