@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $raleway;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+a,
+.button,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: #FBBA42;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: #1696e7;
+  outline: medium none;
+}
+
+input:focus,
+textarea:focus,
+:focus {
+  outline: 0
+}
+
+button:focus {
+  outline: 0 none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $roboto;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.15;
+  color: $white;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 80px;
+  color: $white;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h4 {
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $raleway;
+  color: $white;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background-color: #d6b161;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+// colors
+.black {
+  color: $black;
+}
+
+// background
+.bg-black {
+  background: $black;
+}
+
+.bg-black-light {
+  background: $black-light;
+}
+
+.bg-black-two {
+  background: $black-two;
+}
+
+.bg-black-three {
+  background: $black-three;
+}
+
+.bg-black-four {
+  background: $black-four;
+}
+
+.bg-black-five {
+  background: $black-five;
+}

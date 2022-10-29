@@ -1,0 +1,44 @@
+.footer-area {
+    .footer-nav {
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-family: $raleway;
+                        font-size: 20px;
+                        color: $white;
+                        margin-right: 50px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social-nav {
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    color: $black;
+                    background: linear-gradient(to right, #33FF00, #FAFF00);
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

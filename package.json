@@ -1,0 +1,22 @@
+{
+  "name": "transfective",
+  "version": "1.0.0",
+  "description": "Project of Spellon",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerTajul/transfective.git"
+  },
+  "author": "spellon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerTajul/transfective/issues"
+  },
+  "homepage": "https://github.com/developerTajul/transfective#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
