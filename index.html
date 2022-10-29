@@ -35,7 +35,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-9  d-flex justify-content-end">
+                <div class="col-lg-9  d-lg-flex justify-content-end d-none ">
                     <!-- menu area -->
                     <div class="main-menu-area">
                         <nav class="primary-menu">
@@ -44,24 +44,25 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="#">Offene Stellen</a></li>
                                 <li><a href="#">Jetzt Starten</a></li>
+                                <!--
                                 <li class="has-dropdown"><a href="#">dropdown</a>
-                                    <ul>
+                                  <ul>
                                         <li><a href="technology-v1.html">technology v1</a></li>
                                         <li><a href="technology-v2.html">technology v2</a></li>
                                         <li><a href="#">Practice areas</a>
-                                            <!-- <ul>
+                                            <ul>
                                                 <li><a href="#">About us</a></li>
                                                 <li><a href="#">Practice areas</a></li>
                                                 <li><a href="#">Practice areas</a></li>
                                                 <li><a href="#">Case results</a></li>
                                                 <li><a href="#">Contact Sales</a></li>
                                                 <li><a href="#">About us</a></li>
-                                            </ul> -->
+                                            </ul>
                                         </li>
                                         <li><a href="#">Case results</a></li>
                                         <li><a href="#">Contact Sales</a></li>
                                         <li><a href="#">About us</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                             </ul>
                         </nav>
@@ -70,7 +71,9 @@
                 <!-- button area -->
 
                 <div class="open-menu-btn d-flex justify-content-end d-lg-none col-6">
-                    <button type="button"><i class="fa-solid fa-bars"></i></button>
+                    <button type="button">
+                        <img src="images/header/icon.png" alt="">
+                    </button>
 
                 </div>
             </div>
@@ -80,7 +83,7 @@
             <div class="d-flex justify-content-between mobile-menu-top">
                 <div class="logo-area">
                     <a href="index.html">
-                        <img src="images/logo/footer-logo.png" alt="logo">
+                        <img src="images/header/logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="close-btn">
@@ -89,12 +92,10 @@
             </div>
             <nav class="primary-menu">
                 <ul>
-                    <li><a href="services.html">services</a></li>
-                    <li><a href="industries.html">industries</a></li>
-                    <li><a href="contact.html">Contact </a></li>
-                    <li><a href="technology-v1.html">technology </a></li>
-                    <li><a href="ecommerce.html">E-Commerce </a></li>
-                 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Offene Stellen</a></li>
+                    <li><a href="#">Jetzt Starten</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -104,21 +105,11 @@
     <section class="bannar-area bg-black pt-100 pb-100">
         <div class="container">
             <div class="row bannar-row">
-                <!-- positoin image -->
-                <div class="left-stroke-img">
-                    <img src="images/bannar/left-stroke-image.png" alt="">
-                </div>
-                <div class="right-stroke-img">
-                    <img src="images/bannar/right-stroke-img.png" alt="">
-                </div>
 
-                <div class="col-lg-8 offset-lg-4">
-                    <img src="images/bannar/bannar.png" class="img-fluid" alt="image">
-                </div>
                 <!-- hero text content -->
                 <div class="bannar-text-content-wrapper">
                     <div class="row">
-                        <div class="col-xl-5  ">
+                        <div class="col-12 col-lg-6 col-xl-5 ">
                             <div class="bannar-text-content">
                                 <div class="bannar-title">
                                     <h1>Sales as a Service</h1>
@@ -146,18 +137,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- positoin image -->
+                <div class="left-stroke-img">
+                    <img src="images/bannar/left-stroke-image.png" alt="">
+                </div>
+                <div class="right-stroke-img">
+                    <img src="images/bannar/right-stroke-img.png" alt="">
+                </div>
+
+                <div class="col-12 col-lg-8 offset-lg-4 bannar-img">
+                    <img src="images/bannar/bannar.png" class="img-fluid" alt="image">
+                </div>
             </div>
         </div>
     </section>
     <!-- bannar end -->
     <!-- brands area start -->
-    <section class="brands-area bg-black-light pt-70 pb-70">
+    <section class="brands-area bg-black-light pt-xs-35 pb-xs-35 pt-70 pb-70">
         <div class="container">
             <div class="row">
                 <div class="section-title text-center">
                     <h2>We’ve 250k+ Trusted Partners</h2>
                 </div>
-                <div class="brands-wrapper mt-40">
+                <div class="brands-wrapper mt-xs-25 mt-40">
                     <ul class="brands-slider">
                         <li><a href="#"><img src="images/brands/brands-1.png" alt="brands"></a></li>
                         <li><a href="#"><img src="images/brands/brands-2.png" alt="brands"></a></li>
@@ -176,7 +178,7 @@
     </section>
     <!-- brands area end -->
     <!-- add sales area start -->
-    <section class="add-sales-area bg-black pt-100 pb-100 ">
+    <section class="add-sales-area bg-black pt-xs-70 pb-xs-50 pb-sm-50 pb-md-50   pt-100 pb-100 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -185,16 +187,26 @@
                     </div>
                 </div>
             </div>
+            <!-- add sales image -->
+            <div class="row mt-20 d-lg-none pl-50 pr-50 ">
+                <div class="col-lg-10 offset-lg-1 bg-black-light pt-45 pb-45 add-sales-img-wrapper ">
+                    <div class="d-flex justify-content-center">
+                        <div class="add-sales-img ">
+                            <img src="images/add-sales/add-sales-img.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- blog area -->
-            <div class="row mt-80 add-sales-blog-card-row ">
+            <div class="row mt-xs-20 mt-80 add-sales-blog-card-row px-sm-50 px-md-80 ">
                 <!-- card one -->
                 <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="blog-card text-center bg-black-light pt-80  pb-40  pl-30 pr-30">
+                    <div class="blog-card text-center bg-black-light pt-xs-40 pb-xs-20 pt-80  pb-40  pl-30 pr-30">
                         <div class="blog-card-top">
                             <div class="blog-card-icon">
                                 <img src="images/add-sales/icon-1.png" alt="icon">
                             </div>
-                            <div class="blog-card-title pt-35 pb-20">
+                            <div class="blog-card-title pt-xs-20 pt-35 pb-20">
                                 <h3>Qualität</h3>
                             </div>
                         </div>
@@ -211,12 +223,12 @@
                 </div>
                 <!-- card two -->
                 <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="blog-card text-center bg-black-light pt-80  pb-40  pl-30 pr-30">
+                    <div class="blog-card text-center bg-black-light pt-xs-40 pb-xs-20 pt-80  pb-40  pl-30 pr-30">
                         <div class="blog-card-top">
                             <div class="blog-card-icon">
                                 <img src="images/add-sales/icon-2.png" alt="icon">
                             </div>
-                            <div class="blog-card-title pt-35 pb-20">
+                            <div class="blog-card-title pt-xs-20 pt-35 pb-20">
                                 <h3>Transparenz</h3>
                             </div>
                         </div>
@@ -229,12 +241,12 @@
                 </div>
                 <!-- card three -->
                 <div class="col-lg-4 d-flex align-items-stretch">
-                    <div class="blog-card text-center bg-black-light pt-80 pb-40 pl-30 pr-30">
+                    <div class="blog-card text-center bg-black-light pt-xs-40 pb-xs-20 pt-80 pb-40 pl-30 pr-30">
                         <div class="blog-card-top">
                             <div class="blog-card-icon">
                                 <img src="images/add-sales/icon-3.png" alt="icon">
                             </div>
-                            <div class="blog-card-title pt-35 pb-20">
+                            <div class="blog-card-title pt-xs-20 pt-35 pb-20">
                                 <h3>Datenbasiert</h3>
                             </div>
                         </div>
@@ -251,7 +263,7 @@
                 </div>
             </div>
             <!-- add sales image -->
-            <div class="row mt-100 ">
+            <div class="row mt-100 d-none d-lg-block ">
                 <div class="col-lg-10 offset-lg-1 bg-black-light pt-45 pb-45 add-sales-img-wrapper ">
                     <div class="d-flex justify-content-center">
                         <div class="add-sales-img ">
@@ -274,10 +286,10 @@
                 </div>
             </div>
             <!-- accordion start -->
-            <div class="row bg-black-three rounded-5 g-0  mt-70">
-                <div class="col-lg-5">
+            <div class="row bg-black-three rounded-5 gx-2 g-xl-0  mt-70">
+                <div class="col-xl-5 col-lg-6">
 
-                    <div class="accordion bg-black-two pt-60 pb-60" id="analysisAccordion">
+                    <div class="accordion bg-black-two pt-xs-50 pb-xs-50 pt-60 pb-60" id="analysisAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -306,6 +318,12 @@
                                             <li>Ausarbeitung der USPs</li>
                                             <li>Entwicklung individueller Ansprache Konzepte</li>
                                         </ul>
+                                    </div>
+                                    <div class="accordion-right-img mt-xs-30 mt-sm-30 mt-md-30">
+                                        <img src="images/accordion/accordion.png" class="img-fluid" alt="accordion">
+                                        <div class="accordion-right-img-caption mt-30">
+                                            <h4>Kick-Off Analyse</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -409,7 +427,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-7 ">
+                <div class="col-lg-6 col-xl-7 d-none d-lg-block">
                     <div class="pt-150">
                         <div class="accordion-right-img ">
                             <img src="images/accordion/accordion.png" class="img-fluid" alt="accordion">
@@ -424,20 +442,24 @@
     </section>
     <!--analysis accordion area end-->
     <!-- testimonial area start -->
-    <section class="testimonial-area bg-black pt-100 pb-100">
+    <section class="testimonial-area bg-black pt-xs-70 pb-xs-50 pt-100 pb-100">
         <div class="container testimonial-slider-wrapper">
             <div class="testimonial-arrow">
                 <button type="button" class="testimonial-prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>
                 <button type="button" class="testimonial-next-arrow"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
             <div class="row">
-                <div class="col-lg-10 offset-lg-1 ">
-
+                <div class="col-12 col-lg-10 offset-lg-1 ">
+                    <div class="row">
+                        <div class="col-12 text-center text-capitalize">
+                            <h2>Our clint Feedback</h2>
+                        </div>
+                    </div>
                     <div class="testimonial-slider">
                         <!-- arrows -->
                         <div class="slide">
                             <div class="row align-items-center">
-                                <div class="col-lg-5">
+                                <div class="col-12 col-lg-5">
                                     <div class="left-author-area">
                                         <div class="author">
                                             <a href="#" class="author-img">
@@ -452,9 +474,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-7">
+                                <div class="col-12 col-lg-7">
                                     <div class="testimonial-content">
-                                        <div class="testimonial-heading">
+                                        <div class="testimonial-heading d-none d-lg-block">
                                             <h2>Our Client Feedback</h2>
                                         </div>
                                         <div class="testimonial-main-content mt-50">
@@ -462,7 +484,7 @@
                                                 <div class="quote-icon-area">
                                                     <img src="images/testimonial/quote-icon.png" alt="">
                                                 </div>
-                                                <div class="testimonial-desc ml-10">
+                                                <div class="testimonial-desc  ml-10">
                                                     <p>Jede fehlende Mitarbeiter:in im Vertrieb kostet uns monatlich ein
                                                         Vielfaches
                                                         von dem, was wir AddSales zahlen. Ich bin
@@ -669,7 +691,7 @@
                                 <img src="images/about/quote-end.png" alt="">
                             </div>
                         </div>
-                        <div class="authors mt-20">
+                        <div class="authors mt-20 mt-xs-30">
                             <h5><span> -Marvin Bührmann & </span> <span> Matthias Boers </span></h5>
                         </div>
                         <div class="mt-10 underline-text">
@@ -683,15 +705,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pl-90">
+                <div class="col-lg-6 pl-xs-0 mt-40 pl-90">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="img-area mt-100">
+                        <div class="col-6 col-lg-6">
+                            <div class="img-area mt-100 mt-xs-0">
                                 <img src="images/about/img-1.png" class="img-fluid" alt="">
                                 <h6 class="text-capitalize  mt-15">Marvin Bührmann,Founder</h6>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-6 col-lg-6">
                             <div class="img-area">
                                 <h6 class="text-capitalize pl-20 mb-20">Matthias Boers,Founder</h6>
                                 <img src="images/about/mattihs.png" class="img-fluid" alt="">
@@ -706,8 +728,8 @@
     <!-- footer start -->
     <footer class="footer-area bg-black-five pt-30 pb-30">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="footer-nav">
+            <div class="d-sm-flex justify-content-between align-items-center">
+                <div class="footer-nav d-flex justify-content-center d-sm-block">
                     <nav>
                         <ul>
                             <li><a href="#">Imprint</a></li>
@@ -717,7 +739,7 @@
                     </nav>
                 </div>
 
-                <div class="footer-social-nav">
+                <div class="footer-social-nav mt-xs-20 d-flex justify-content-center">
                     <nav>
                         <ul>
                             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -736,6 +758,7 @@
     <script src="js/jquery-3.6.2.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/slider-active.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -41,34 +41,37 @@
                     background: transparent;
                 }
             }
-            .accordion-body{
-                background:linear-gradient(to right,#071f01,#303030);
+
+            .accordion-body {
+                background: linear-gradient(to right, #071f01, #303030);
                 padding-left: 40px;
                 padding-top: 26px;
                 padding-right: 60px;
                 padding-bottom: 40px;
-               .list-content{
-                .list-items{
-                    li{
-                        font-size: 16px;
-                        line-height: 20px;
-                        font-family: $raleway;
-                        color: $white;
-                        margin-bottom: 10px;
-                        position: relative;
-                        padding-left: 30px;
-                        &::before{
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            content:'\f560';
-                            font-family: 'Font Awesome 6 Free';
-                            font-weight: 800;
-                            color: $green;
+
+                .list-content {
+                    .list-items {
+                        li {
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-family: $raleway;
+                            color: $white;
+                            margin-bottom: 10px;
+                            position: relative;
+                            padding-left: 30px;
+
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                content: '\f560';
+                                font-family: 'Font Awesome 6 Free';
+                                font-weight: 800;
+                                color: $green;
+                            }
                         }
                     }
                 }
-               }
             }
         }
     }
@@ -84,4 +87,18 @@
             text-transform: capitalize;
         }
     }
+}
+
+@media screen and (max-width:575px) {
+    .analysis-accordion .accordion .accordion-item .accordion-header button {
+        font-size: 18px;
+        line-height: 22px;
+    }
+        .analysis-accordion .accordion .accordion-item .accordion-body {
+       
+            padding-left: 25px;
+            padding-top: 26px;
+            padding-right: 20px;
+   
+        }
 }

@@ -70,3 +70,20 @@
         }
     }
 }
+
+@media screen and (max-width:575px) {
+    .about-area.bg-black-four.pt-70.pb-90 {
+        margin-top: -50px;
+    }
+
+    .about-area .about-left-area .about-heading h2 {
+        font-size: 24px;
+        line-height: 28px;
+
+    }
+
+    h5 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
