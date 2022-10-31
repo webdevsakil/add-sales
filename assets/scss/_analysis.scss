@@ -64,17 +64,9 @@
                             color: $white;
                             margin-bottom: 10px;
                             position: relative;
-                            padding-left: 30px;
+                         
 
-                            &::before {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                content: '\f560';
-                                font-family: 'Font Awesome 6 Free';
-                                font-weight: 800;
-                                color: $green;
-                            }
+                           
                         }
                     }
                 }

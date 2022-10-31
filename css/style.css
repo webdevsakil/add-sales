@@ -883,16 +883,6 @@ label {
   color: #FFFFFF;
   margin-bottom: 10px;
   position: relative;
-  padding-left: 30px;
-}
-.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items li::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "\f560";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 800;
-  color: #4dff21;
 }
 .analysis-accordion .accordion-right-img {
   text-align: center;
