@@ -129,6 +129,7 @@ h6 {
   font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
@@ -287,6 +288,8 @@ label {
 .theme-btn-primary {
   background: linear-gradient(to right, #33FF00, #FAFF00);
   color: #000000;
+  border: 1px solid transparent;
+  height: 58px;
 }
 
 .theme-btn-bordered {
@@ -335,7 +338,7 @@ label {
   text-decoration: none;
 }
 .header-area .logo-area a img {
-  width: 150px;
+  width: 142px;
   height: auto;
 }
 .header-area .main-menu-area .primary-menu ul {
@@ -355,10 +358,11 @@ label {
   color: #666666;
   text-transform: capitalize;
   font-weight: 500;
-  margin: 0px 20px;
+  margin-left: 50px;
   min-height: 80px;
   padding: 0px 5px;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 28px;
   color: #FFFFFF;
 }
 .header-area .main-menu-area .primary-menu ul li a:hover {
@@ -630,65 +634,140 @@ label {
     padding: 20px 0px;
   }
 }
-.bannar-area .bannar-row {
+.bannar-area {
+  padding-top: 212px;
+  padding-bottom: 180px;
+}
+.bannar-area .bannar-container {
   position: relative;
 }
-.bannar-area .bannar-row .bannar-text-content-wrapper {
+.bannar-area .bannar-container .left-absolute-img {
   position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%);
+  top: 0px;
+  left: -290px;
 }
-.bannar-area .bannar-row .bannar-text-content-wrapper .bannar-text-content .bannar-desc p {
-  line-height: 19px;
-}
-.bannar-area .bannar-row .left-stroke-img {
+.bannar-area .bannar-container .right-absolute-img {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -22%;
+  top: 0px;
+  right: -400px;
 }
-.bannar-area .bannar-row .right-stroke-img {
+.bannar-area .bannar-heading h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 67px;
+  color: #FFFFFF;
+}
+.bannar-area .bannar-desc p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}
+.bannar-area .btn-area .theme-btn {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+}
+.bannar-area .right-image-area {
+  position: relative;
+}
+.bannar-area .right-image-area .bannar-img {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 108%;
+  top: -345px;
+  left: -270px;
 }
 
-@media screen and (max-width: 991px) {
-  .bannar-area .bannar-row .left-stroke-img {
-    display: none;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .bannar-area .bannar-heading h1 {
+    font-size: 36px;
+    line-height: 53px;
   }
-  .bannar-area .bannar-row .right-stroke-img {
-    display: none;
+  .bannar-area {
+    padding-top: 180px;
+    padding-bottom: 100px;
   }
-  .bannar-area .bannar-row .bannar-text-content-wrapper {
-    position: unset;
-    transform: translateY(0%);
-  }
-  .bannar-area .bannar-img img {
-    transform: scale(1.6);
-  }
-  .bannar-area .bannar-img {
-    margin-top: 85px;
-    margin-left: -80px;
-    padding-bottom: 80px;
+  .bannar-area .right-image-area .bannar-img {
+    top: -270px;
+    left: -240px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .bannar-area .bannar-img img {
-    transform: scale(1.3);
+  .bannar-area .bannar-heading h1 {
+    font-size: 36px;
+    line-height: 48px;
   }
-  .bannar-area .bannar-row .bannar-text-content-wrapper .bannar-text-content .bannar-desc p {
-    line-height: 26px;
+  .bannar-area {
+    padding-top: 90px;
+    padding-bottom: 80px;
   }
-  .bannar-area .bannar-img {
-    margin-left: -130px;
+  .bannar-area .bannar-desc p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .bannar-area .right-image-area .bannar-img {
+    position: unset;
+    margin-top: 30px;
+    margin-left: -200px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .bannar-area .bannar-row .bannar-text-content-wrapper .bannar-text-content .bannar-desc p {
-    line-height: 26px;
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .bannar-area .bannar-heading h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .bannar-area {
+    padding-top: 82px;
+    padding-bottom: 80px;
+  }
+  .bannar-area .bannar-desc p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .bannar-area .right-image-area .bannar-img {
+    position: unset;
+    margin-top: 30px;
+    margin-left: -200px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .bannar-area .bannar-heading h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .bannar-area {
+    padding-top: 82px;
+    padding-bottom: 80px;
+  }
+  .bannar-area .bannar-desc p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .bannar-area .right-image-area .bannar-img {
+    position: unset;
+    margin-top: 30px;
+    margin-left: -200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bannar-area .bannar-heading h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .bannar-area {
+    padding-top: 82px;
+    padding-bottom: 80px;
+  }
+  .bannar-area .bannar-desc p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .bannar-area .right-image-area .bannar-img {
+    position: unset;
+    margin-top: 30px;
+    margin-left: -90px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -734,8 +813,11 @@ label {
 .add-sales-area .blog-card {
   border-radius: 15px;
 }
-.add-sales-area .add-sales-img-wrapper {
-  border-radius: 15px;
+.add-sales-area .blog-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 991px) {
@@ -747,6 +829,11 @@ label {
     font-size: 15px;
     line-height: 26px;
   }
+}
+.analysis-accordion .section-title h2 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
 }
 .analysis-accordion .accordion {
   border-top-left-radius: 30px;
@@ -829,6 +916,11 @@ label {
     padding-right: 20px;
   }
 }
+.testimonial-area .testimonial-slider .testimonial-heading h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  line-height: 45px;
+}
 .testimonial-area .testimonial-slider .slide {
   padding: 70px;
 }
@@ -852,9 +944,13 @@ label {
 .testimonial-area .testimonial-slider .testimonial-content {
   padding-left: 60px;
 }
+.testimonial-area .testimonial-slider .testimonial-content .testiomonial-author {
+  padding-left: 52px;
+}
 .testimonial-area .testimonial-slider .testimonial-content .testiomonial-author h4 {
   font-size: 16px;
   line-height: 19px;
+  font-family: "Raleway", sans-serif;
 }
 .testimonial-area .testimonial-slider .testimonial-content .testiomonial-author ul {
   margin-top: 10px;
@@ -863,7 +959,11 @@ label {
 }
 .testimonial-area .testimonial-slider .testimonial-content .testiomonial-author ul li {
   color: #888888;
+  font-weight: 500;
+  font-size: 16px;
+  color: #888888;
   margin-right: 10px;
+  font-family: "Raleway", sans-serif;
 }
 .testimonial-area .testimonial-slider-wrapper {
   position: relative;
@@ -1032,12 +1132,14 @@ label {
 }
 .footer-area .footer-nav nav ul li a {
   text-decoration: none;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
   color: #FFFFFF;
   margin-right: 50px;
   display: inline-block;
+  font-weight: 400;
 }
 .footer-area .footer-social-nav ul {
   display: flex;

@@ -1,5 +1,13 @@
 .testimonial-area {
     .testimonial-slider {
+        .testimonial-heading{
+            h2{
+                font-family: $roboto;
+                font-size: 38px;
+                line-height: 45px;
+         
+            }
+        }
         .slide {
             padding: 70px;
         }
@@ -31,9 +39,11 @@
             padding-left: 60px;
 
             .testiomonial-author {
+                padding-left: 52px;
                 h4 {
                     font-size: 16px;
                     line-height: 19px;
+                    font-family: $raleway;
 
                 }
 
@@ -44,7 +54,11 @@
 
                     li {
                         color: $gray;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #888888;
                         margin-right: 10px;
+                        font-family: $raleway;
                     }
                 }
             }

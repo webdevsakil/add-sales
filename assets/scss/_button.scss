@@ -1,6 +1,6 @@
-.theme-btn{
+.theme-btn {
     border: none;
-    background:transparent;
+    background: transparent;
     display: inline-block;
     text-decoration: none;
     text-transform: capitalize;
@@ -11,28 +11,38 @@
     text-transform: capitalize;
     padding: 14px 32px;
 }
-.theme-btn-primary{
-    background: linear-gradient(to right,#33FF00,#FAFF00);
+
+.theme-btn-primary {
+    background: linear-gradient(to right, #33FF00, #FAFF00);
     color: $black;
+    border: 1px solid transparent;
+    height: 58px;
+   
+   
 }
-.theme-btn-bordered{
+
+
+.theme-btn-bordered {
     border: 1px solid #000E28;
     color: #000000;
     padding: 13px 30px;
     box-shadow: 2px 2px 2px 3px #000000;
-    &:hover{
+
+    &:hover {
         background: #000000;
         color: #fff;
     }
 }
-.theme-shadow-btn{
+
+.theme-shadow-btn {
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 20px 58px;
     color: #000000;
     box-shadow: 2px 3px 8px #000000;
-    &:hover{
-        background:#000000;
+
+    &:hover {
+        background: #000000;
         color: #fff;
     }
 }
