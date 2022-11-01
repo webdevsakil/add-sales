@@ -103,7 +103,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 38px;
   line-height: 46px;
   font-weight: 500;
@@ -943,7 +943,7 @@ label {
   right: 0;
 }
 .analysis-accordion .section-title h2 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 38px;
   line-height: 45px;
 }
