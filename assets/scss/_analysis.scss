@@ -248,6 +248,7 @@
 }
 
 @media screen and (max-width:575px) {
+
     .analysis-accordion .section-title h2 {
         font-weight: 400;
         font-size: 24px;
@@ -256,7 +257,6 @@
 
     .analysis-accordion .accordion {
         border-radius: 30px;
-
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
@@ -270,7 +270,7 @@
     }
 
     .analysis-accordion .accordion .accordion-item .accordion-body {
-        padding: 0px 0px;
+        padding: 0px 10px;
     }
 
     .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper .text-content p {
@@ -297,4 +297,29 @@
         padding: 25px 23px;
         font-weight: 700;
     }
+
+    .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 23px 24px;
+
+    }
+
+    .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper {
+        padding: 12px 15px;
+    }
+
+    .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 12px 23px;
+    }
+
+   
 }

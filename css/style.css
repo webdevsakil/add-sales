@@ -1132,7 +1132,7 @@ label {
     width: 100%;
   }
   .analysis-accordion .accordion .accordion-item .accordion-body {
-    padding: 0px 0px;
+    padding: 0px 10px;
   }
   .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper .text-content p {
     line-height: 26px;
@@ -1154,6 +1154,24 @@ label {
     line-height: 21px;
     padding: 25px 23px;
     font-weight: 700;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 23px 24px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper {
+    padding: 12px 15px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 23px;
   }
 }
 .testimonial-area .testimonial-slider .testimonial-heading h2 {
@@ -1263,9 +1281,6 @@ label {
     position: relative;
     z-index: 1;
   }
-  .testimonial-arrow .testimonial-prev-arrow {
-    display: none !important;
-  }
   .testimonial-area .testimonial-slider .testimonial-content {
     padding-left: 0px;
     padding-top: 30px;
@@ -1274,8 +1289,9 @@ label {
     width: 15px;
   }
   .testimonial-area .testimonial-slider-wrapper .testimonial-arrow {
-    top: 28%;
-    left: 78%;
+    top: 32%;
+    padding: 0px 15px;
+    left: 0px;
   }
   .quote-icon-area {
     margin-left: -36px;
@@ -1288,8 +1304,6 @@ label {
   }
   .testimonial-slider .slick-slide img {
     display: block;
-    transform: scale(1.3);
-    margin-left: -30px;
   }
   .testimonial-area .testimonial-slider .testimonial-content .testiomonial-author img {
     margin-left: 30px;
@@ -1298,11 +1312,7 @@ label {
 @media screen and (min-width: 575px) and (max-width: 767px) {
   .testimonial-slider .slick-slide img {
     display: block;
-    transform: scale(1);
     margin-left: 0px;
-  }
-  .testimonial-area .testimonial-slider-wrapper .testimonial-arrow button {
-    margin-left: 64px;
   }
   .testiomonial-author.mt-20 {
     margin-left: 0px;
@@ -1310,13 +1320,28 @@ label {
   .testimonial-desc {
     margin-left: 20px;
   }
+  .testimonial-area .testimonial-slider-wrapper .testimonial-arrow button {
+    height: 40px;
+    width: 40px;
+  }
+  .testimonial-area .testimonial-slider-wrapper .testimonial-arrow {
+    top: 40%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-heading {
     display: none;
   }
+  .testimonial-area .testimonial-slider-wrapper .testimonial-arrow {
+    top: 45%;
+    left: 0;
+  }
 }
 @media screen and (max-width: 480px) {
+  .testimonial-area .testimonial-slider-wrapper .testimonial-arrow button {
+    height: 40px;
+    width: 40px;
+  }
   .testimonial-main-content {
     margin-right: -50px;
   }
