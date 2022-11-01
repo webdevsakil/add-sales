@@ -724,7 +724,7 @@ label {
 }
 .bannar-area .bannar-container .left-absolute-img {
   position: absolute;
-  top: 0px;
+  top: -12px;
   left: -433px;
 }
 .bannar-area .bannar-container .left-absolute-img img {
