@@ -716,8 +716,8 @@ label {
   }
 }
 .bannar-area {
-  padding-top: 212px;
-  padding-bottom: 180px;
+  padding-top: 265px;
+  padding-bottom: 220px;
 }
 .bannar-area .bannar-container {
   position: relative;
@@ -725,12 +725,20 @@ label {
 .bannar-area .bannar-container .left-absolute-img {
   position: absolute;
   top: 0px;
-  left: -290px;
+  left: -433px;
+}
+.bannar-area .bannar-container .left-absolute-img img {
+  width: 420px;
+  height: 480px;
 }
 .bannar-area .bannar-container .right-absolute-img {
   position: absolute;
-  top: 0px;
-  right: -400px;
+  top: -115px;
+  right: -506px;
+}
+.bannar-area .bannar-container .right-absolute-img .img-area {
+  position: relative;
+  z-index: 98;
 }
 .bannar-area .bannar-heading h1 {
   font-family: "Roboto", sans-serif;
@@ -757,8 +765,8 @@ label {
 }
 .bannar-area .right-image-area .bannar-img {
   position: absolute;
-  top: -345px;
-  left: -270px;
+  top: -331px;
+  left: -240px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {

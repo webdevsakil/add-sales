@@ -1,6 +1,6 @@
 .bannar-area {
-    padding-top: 212px;
-    padding-bottom: 180px;
+    padding-top: 265px;
+    padding-bottom: 220px;
 
     .bannar-container {
         position: relative;
@@ -8,54 +8,66 @@
         .left-absolute-img {
             position: absolute;
             top: 0px;
-            left: -290px;
+            left: -433px;
+
+
+            img {
+                width: 420px;
+                height: 480px;
+            }
         }
 
         .right-absolute-img {
             position: absolute;
-            top: 0px;
-            right: -400px;
+            top: -115px;
+            right: -506px;
+        
+
+        .img-area {
+            position: relative;
+            z-index: 98;
         }
     }
+}
 
-    .bannar-heading {
-        h1 {
-            font-family: $roboto;
-            font-weight: 400;
-            font-size: 67px;
-            color: $white;
-        }
+.bannar-heading {
+    h1 {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 67px;
+        color: $white;
     }
+}
 
-    .bannar-desc {
-        p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: $white;
-            font-family: $raleway;
-        }
+.bannar-desc {
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        font-family: $raleway;
     }
+}
 
-    .btn-area {
-        .theme-btn {
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 700;
-            font-family: $raleway;
-            color: $black;
-        }
+.btn-area {
+    .theme-btn {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        font-family: $raleway;
+        color: $black;
     }
+}
 
-    .right-image-area {
-        position: relative;
+.right-image-area {
+    position: relative;
 
-        .bannar-img {
-            position: absolute;
-            top: -345px;
-            left: -270px;
-        }
+    .bannar-img {
+        position: absolute;
+        top: -331px;
+        left: -240px;
     }
+}
 
 }
 
