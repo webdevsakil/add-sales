@@ -28,48 +28,57 @@
         .authors {
             h5 {
                 font-family: $dancingScript;
-
-                span {
-                    &:first-child {
-                        color: $green;
-                    }
-
-                    &:last-child {
-                        color: #FAFF00;
-                    }
-                }
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 400;
             }
 
-        }
+            span {
+                &:first-child {
+                    color: $green;
+                }
 
-        .underline-text {
-            p {
-                text-decoration: underline;
+                &:last-child {
+                    color: #FAFF00;
+                }
             }
         }
 
-        .border-left-content {
-            ul {
-                position: relative;
+    }
 
-                &::before {
-                    position: absolute;
-                    top: 5px;
-                    left: 0;
-                    height: 80%;
-                    width: 2px;
-                    background: linear-gradient(to right, #33FF00, #FAFF00);
-                    content: "";
-                }
+    .underline-text {
+        p {
+            text-decoration: underline;
+        }
+    }
 
-                li {
-                    color: $white;
-                    padding-left: 10px;
-                }
+    .border-left-content {
+        ul {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                height: 80%;
+                width: 2px;
+                background: linear-gradient(to right, #33FF00, #FAFF00);
+                content: "";
             }
+
+            li {
+                color: $white;
+                padding-left: 10px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 26px;
+            }
+
         }
     }
 }
+
+
 
 @media screen and (max-width:575px) {
     .about-area.bg-black-four.pt-70.pb-90 {
@@ -89,5 +98,16 @@
 
     .img-area.mt-100.mt-xs-0 {
         margin-left: 25px;
+    }
+
+    .about-area .about-left-area .about-quote-desc p {
+
+        line-height: 26px;
+    }
+
+    .about-area .about-left-area .authors h5 {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
     }
 }

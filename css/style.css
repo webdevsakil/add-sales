@@ -103,10 +103,9 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 38px;
   line-height: 46px;
-  font-weight: 500;
 }
 
 h3 {
@@ -128,7 +127,8 @@ h5 {
 
 h6 {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
+  font-weight: 500;
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
 }
@@ -902,6 +902,12 @@ label {
 .add-sales-area .blog-card {
   border-radius: 15px;
 }
+.add-sales-area .blog-card .blog-card-title {
+  margin-top: 10px;
+}
+.add-sales-area .blog-card .blog-card-icon img {
+  height: 80px;
+}
 .add-sales-area .blog-card h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -943,7 +949,7 @@ label {
   right: 0;
 }
 .analysis-accordion .section-title h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 38px;
   line-height: 45px;
 }
@@ -1014,6 +1020,7 @@ label {
   font-size: 16px;
   line-height: 26px;
   font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 .analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items li {
   font-size: 15px;
@@ -1337,20 +1344,23 @@ label {
 }
 .about-area .about-left-area .authors h5 {
   font-family: "Dancing Script", cursive;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
 }
-.about-area .about-left-area .authors h5 span:first-child {
+.about-area .about-left-area .authors span:first-child {
   color: #4dff21;
 }
-.about-area .about-left-area .authors h5 span:last-child {
+.about-area .about-left-area .authors span:last-child {
   color: #FAFF00;
 }
-.about-area .about-left-area .underline-text p {
+.about-area .underline-text p {
   text-decoration: underline;
 }
-.about-area .about-left-area .border-left-content ul {
+.about-area .border-left-content ul {
   position: relative;
 }
-.about-area .about-left-area .border-left-content ul::before {
+.about-area .border-left-content ul::before {
   position: absolute;
   top: 5px;
   left: 0;
@@ -1359,9 +1369,12 @@ label {
   background: linear-gradient(to right, #33FF00, #FAFF00);
   content: "";
 }
-.about-area .about-left-area .border-left-content ul li {
+.about-area .border-left-content ul li {
   color: #FFFFFF;
   padding-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 @media screen and (max-width: 575px) {
@@ -1378,6 +1391,14 @@ label {
   }
   .img-area.mt-100.mt-xs-0 {
     margin-left: 25px;
+  }
+  .about-area .about-left-area .about-quote-desc p {
+    line-height: 26px;
+  }
+  .about-area .about-left-area .authors h5 {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
   }
 }
 .footer-area .footer-nav nav ul {
