@@ -43,8 +43,7 @@
                     border-bottom: none;
                     font-weight: 500;
                     font-family: $roboto;
-                    font-size: 24px;
-                    line-height: 28px;
+
                     color: $white;
                     background: transparent;
                     text-transform: capitalize;
@@ -65,11 +64,15 @@
                         box-shadow: none;
                         border-top-left-radius: 12px;
                         border-top-right-radius: 12px;
+                        font-size: 24px;
+                        line-height: 28px;
                     }
 
                     &.collapsed {
                         color: $white ;
                         background: transparent;
+                        font-size: 20px;
+                        line-height: 30px;
 
                     }
 

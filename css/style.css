@@ -438,7 +438,7 @@ label {
   align-items: center;
   color: #666666;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 50px;
   min-height: 80px;
   padding: 0px 5px;
@@ -902,12 +902,6 @@ label {
 .add-sales-area .blog-card {
   border-radius: 15px;
 }
-.add-sales-area .blog-card .blog-card-title {
-  margin-top: 10px;
-}
-.add-sales-area .blog-card .blog-card-icon img {
-  height: 80px;
-}
 .add-sales-area .blog-card h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -967,8 +961,6 @@ label {
   border-bottom: none;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
   color: #FFFFFF;
   background: transparent;
   text-transform: capitalize;
@@ -987,10 +979,14 @@ label {
   box-shadow: none;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  font-size: 24px;
+  line-height: 28px;
 }
 .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button.collapsed {
   color: #FFFFFF;
   background: transparent;
+  font-size: 20px;
+  line-height: 30px;
 }
 .analysis-accordion .accordion .accordion-item .accordion-body {
   padding: 0px 12px;
