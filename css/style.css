@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***
   Theme Name: add Sales | HTML5 Template
   Author: Spellon
@@ -274,7 +275,6 @@ label {
 .theme-btn {
   border: none;
   background: transparent;
-  display: inline-block;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 18px;
@@ -282,14 +282,14 @@ label {
   border-radius: 12px;
   transition: all ease-in-out 0.3s;
   text-transform: capitalize;
-  padding: 14px 32px;
-}
-
-.theme-btn-primary {
+  width: 170px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(to right, #33FF00, #FAFF00);
   color: #000000;
   border: 1px solid transparent;
-  height: 58px;
 }
 
 .theme-btn-bordered {
@@ -315,6 +315,87 @@ label {
   color: #fff;
 }
 
+/* -------------------------------- 
+
+💡 How to create gradient borders in CSS
+🔗 https://codyhouse.co/nuggets/css-gradient-borders
+
+-------------------------------- */
+/* method 1 -> use border-image */
+.btn-gradient-1 {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+/* method 2 -> use background-clip to support border-radius */
+.btn-gradient-2 {
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* demo stuff */
+.btn-gradient {
+  border: 1px solid transparent;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: capitalize;
+  padding: 20px 50px;
+  background: linear-gradient(to right, rgb(51, 255, 0), rgb(250, 255, 0));
+  display: inline-block;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  transition: all ease-in 0.3s;
+}
+.btn-gradient:hover {
+  position: relative;
+  background: transparent;
+  color: rgb(51, 255, 0);
+}
+.btn-gradient:hover span {
+  transition: all ease-in 0.3s;
+  color: rgb(250, 255, 0);
+}
+.btn-gradient:hover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  content: "";
+  border-top: 1px solid rgb(250, 255, 0);
+  border-left: 1px solid rgb(250, 255, 0);
+  border-bottom: 1px solid rgb(250, 255, 0);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.btn-gradient:hover::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  content: "";
+  border-top: 1px solid rgb(51, 255, 0);
+  border-right: 1px solid rgb(51, 255, 0);
+  border-bottom: 1px solid rgb(51, 255, 0);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-gradient {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 10px 20px;
+    border-radius: 9px;
+  }
+}
 .bg-gray {
   background: rgba(128, 128, 128, 0.303);
 }
@@ -830,80 +911,233 @@ label {
     line-height: 26px;
   }
 }
+@media screen and (max-width: 575px) {
+  .add-sales-area .blog-card h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.analysis-accordion .accordion-container {
+  position: relative;
+}
+.analysis-accordion .accordion-container .left-stroke-img {
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+.analysis-accordion .accordion-container .right-stroke-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .analysis-accordion .section-title h2 {
   font-weight: 400;
   font-size: 38px;
   line-height: 45px;
 }
 .analysis-accordion .accordion {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-.analysis-accordion .accordion .accordion-button {
-  border-bottom: none;
-}
-.analysis-accordion .accordion .accordion-button::after {
-  display: none;
-}
-.analysis-accordion .accordion .accordion-button:focus {
-  border-color: none;
-  box-shadow: none;
-}
-.analysis-accordion .accordion .accordion-button:not(.collapsed) {
-  color: #000000 !important;
-  background: linear-gradient(to right, #33FF00, #FAFF00) !important;
-  box-shadow: none;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
 }
 .analysis-accordion .accordion .accordion-item {
   border: none;
   background: none;
+  position: relative;
+  z-index: 1;
 }
-.analysis-accordion .accordion .accordion-item .accordion-header button {
+.analysis-accordion .accordion .accordion-item .accordion-header .accordion-button {
+  border-bottom: none;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: transparent;
+  text-transform: capitalize;
+  width: 53%;
+}
+.analysis-accordion .accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #000000;
+  background: linear-gradient(to right, #33FF00, #FAFF00);
+  box-shadow: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.analysis-accordion .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  color: #FFFFFF;
+  background: transparent;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body {
+  padding: 0px 12px;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .accordion-left-bg {
+  background-size: cover;
+  width: 53%;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper {
+  padding: 25px 30px;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper .text-content p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items .list-item {
+  display: flex;
+  align-items: center;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items .list-item .icon {
+  margin-right: 10px;
+  margin-top: -15px;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items .list-item .text p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Raleway", sans-serif;
+}
+.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items li {
+  font-size: 15px;
+  line-height: 26px;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
+  color: #FFFFFF;
+}
+.analysis-accordion .accordion .accordion-img {
+  padding-left: 80px;
+}
+.analysis-accordion .accordion .accordion-img h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
   text-transform: capitalize;
-  background: transparent;
+  margin-top: 15px;
 }
-.analysis-accordion .accordion .accordion-item .accordion-body {
-  background: linear-gradient(to right, #071f01, #303030);
-  padding-left: 40px;
-  padding-top: 26px;
-  padding-right: 60px;
-  padding-bottom: 40px;
-}
-.analysis-accordion .accordion .accordion-item .accordion-body .list-content .list-items li {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Raleway", sans-serif;
-  color: #FFFFFF;
-  margin-bottom: 10px;
+.analysis-accordion .accordion-area {
   position: relative;
 }
-.analysis-accordion .accordion-right-img {
-  text-align: center;
+.analysis-accordion .accordion-area .left-stroke-img {
+  position: absolute;
+  top: 42px;
+  left: -386px;
 }
-.analysis-accordion .accordion-right-img h4 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  color: #FFFFFF;
-  text-transform: capitalize;
+.analysis-accordion .accordion-area .left-stroke-img img {
+  width: 382px;
+}
+.analysis-accordion .accordion-area .right-sroke-img {
+  position: absolute;
+  top: 77px;
+  right: -500px;
+}
+.analysis-accordion .accordion-area::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 100%;
+  width: 47%;
+  background: #222422;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-@media screen and (max-width: 575px) {
-  .analysis-accordion .accordion .accordion-item .accordion-header button {
-    font-size: 18px;
-    line-height: 22px;
+@media screen and (max-width: 991px) {
+  .analysis-accordion .accordion-area::after {
+    display: none;
+  }
+  .accordion-right-img-area {
+    background: url("./../../images/accordion/accordion-bg.png");
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .analysis-accordion .accordion .accordion-img {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .analysis-accordion .accordion {
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    width: 100%;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body .accordion-left-bg {
+    width: 100%;
   }
   .analysis-accordion .accordion .accordion-item .accordion-body {
-    padding-left: 25px;
-    padding-top: 26px;
-    padding-right: 20px;
+    padding: 0px 10px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper .text-content p {
+    line-height: 26px;
+  }
+  .analysis-accordion .accordion .accordion-img {
+    padding-left: 0px;
+    margin: 12px 25px;
+  }
+  .analysis-accordion .accordion .accordion-img h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .analysis-accordion .section-title h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .analysis-accordion .accordion {
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    width: 100%;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body .accordion-left-bg {
+    width: 100%;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body {
+    padding: 0px 0px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-body .text-content-wrapper .text-content p {
+    line-height: 26px;
+  }
+  .analysis-accordion .accordion .accordion-img {
+    padding-left: 0px;
+    margin: 12px 25px;
+  }
+  .analysis-accordion .accordion .accordion-img h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .analysis-accordion .accordion .accordion-item .accordion-header .accordion-button {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 .testimonial-area .testimonial-slider .testimonial-heading h2 {
@@ -955,6 +1189,9 @@ label {
   margin-right: 10px;
   font-family: "Raleway", sans-serif;
 }
+.testimonial-area .testimonial-slider .testimonial-content p {
+  line-height: 26px;
+}
 .testimonial-area .testimonial-slider-wrapper {
   position: relative;
 }
@@ -984,6 +1221,9 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonial-area .testimonial-slider .testimonial-content .testiomonial-author {
+    padding-left: 0px;
+  }
   .testimonial-slider .slick-slide img {
     display: block;
     transform: scale(1.3);
@@ -1057,6 +1297,11 @@ label {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .testimonial-main-content {
+    margin-right: -50px;
+  }
+}
 .about-area .about-left-area .about-heading h2 {
   font-weight: 400;
   font-size: 38px;
@@ -1115,6 +1360,9 @@ label {
     font-size: 14px;
     line-height: 26px;
   }
+  .img-area.mt-100.mt-xs-0 {
+    margin-left: 25px;
+  }
 }
 .footer-area .footer-nav nav ul {
   display: flex;
@@ -1151,8 +1399,17 @@ label {
 @media screen and (max-width: 575px) {
   .footer-area .footer-nav nav ul li a {
     font-weight: 500;
-    font-size: 16px;
-    margin-right: 21px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 12px;
+  }
+  .footer-area .footer-social-nav ul li a {
+    height: 24px;
+    width: 24px;
+    margin-left: 15px;
+  }
+  .footer-area .footer-social-nav ul li a i {
+    font-size: 12px;
   }
 }
 
