@@ -11,3 +11,14 @@ closeBtn.addEventListener('click', function () {
     mobileMenu.classList.remove('toggle-mobile-menu');
     body.classList.remove('bg-gray');
 })
+
+// accordion
+
+const collapseContent = document.querySelectorAll('.analysis-accordion .accordion .accordion-collapse');
+for (let i = 0; i < collapseContent.length; i++){
+    if (collapseContent[i].classList.contains('show')) {
+        console.log("");
+    } else {
+        collapseContent[0].classList.add('show');
+   }
+}
